@@ -1,0 +1,9 @@
+#!/bin/bash
+cat << EOF
+Aide Tian-Dao-AI:
+  ./bin/tian-analyze <fichier>  - analyse un fichier
+  ./bin/tian-test               - lance les tests
+  ./bin/tian-clean              - nettoie les .pyc, __pycache__
+  ./bin/tian-stats              - statistiques projet
+  ./bin/tian-check              - vérifie les imports
+EOF

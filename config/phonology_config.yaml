@@ -1,0 +1,12 @@
+phonology:
+  historical:
+    enabled: true
+    weights:
+      lexical: 0.5
+      character: 0.3
+      syntax: 0.2
+  modern:
+    enabled: true
+  output:
+    format: json
+    include_confidence: true

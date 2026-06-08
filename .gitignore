@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+logs/
+results/*.json
+results/*.png
+*.log
+.DS_Store
+
+# Environment
+merkahah_env/
+venv/
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+*.pyc

@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Statistiques:"
+echo "Python files: $(find . -name '*.py' | wc -l)"
+echo "Data size: $(du -sh data/ 2>/dev/null | cut -f1)"

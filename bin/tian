@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "=== TIAN-DAO-AI ==="
+echo "Commandes: ./bin/tian-analyze <fichier>, ./bin/tian-test, ./bin/tian-help"

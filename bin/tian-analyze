@@ -1,0 +1,46 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then echo "Usage: $0 <fichier.txt>"; exit 1; fi
+FILE="$1"
+echo "📖 Analyse de $FILE ..."
+echo ""
+python3 -c "
+import sys
+sys.path.insert(0,'src')
+from historical_merkabah.core import HistoricalPhonologyAdapter
+
+adapter = HistoricalPhonologyAdapter()
+
+with open('$FILE','r',encoding='utf-8') as f:
+    text = f.read()
+
+print(f'📝 Texte ({len(text)} caractères):')
+print(text[:200] + ('...' if len(text) > 200 else ''))
+print()
+
+# Détection de période
+scores = adapter.detect_period(text)
+print(f'📅 Période détectée: {scores.best_period}')
+print(f'   Scores détaillés:')
+for period, score in scores.combined.items():
+    print(f'     {period}: {score:.1%}')
+
+# Dictionnaire pinyin simplifié (à enrichir)
+pinyin_dict = {
+    '道': 'dao4', '可': 'ke3', '非': 'fei1', '常': 'chang2',
+    '名': 'ming2', '天': 'tian1', '地': 'di4', '之': 'zhi1',
+    '始': 'shi3', '有': 'you3', '萬': 'wan4', '物': 'wu4', '母': 'mu3'
+}
+
+# Analyse complète
+result = adapter.analyze_text(text, pinyin_dict)
+print(f'\n📊 Résultats:')
+print(f'   Caractères analysés: {result[\"metadonnees\"][\"total_caracteres_analyse\"]}/{result[\"metadonnees\"][\"total_caracteres_chinois\"]}')
+
+print(f'\n📜 Reconstructions historiques:')
+for a in result['analyses_detaillees_historique']:
+    char = a['caractere']
+    recon = a['historical']['reconstruction']
+    merk = a['historical']['merkabah']
+    pinyin = a['modern']['pinyin']
+    print(f'   {char} ({pinyin}): {recon} (Merkabah: {merk})')
+"
