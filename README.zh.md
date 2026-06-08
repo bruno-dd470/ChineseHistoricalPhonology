@@ -6,6 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/network)
 [![GitHub issues](https://img.shields.io/github/issues/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/issues)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20589359.svg)](https://doi.org/10.5281/zenodo.20589359)
 
 **汉语历史音韵学计算系统：历时与共时音韵分析框架**
 

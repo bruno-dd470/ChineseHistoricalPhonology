@@ -6,6 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/network)
 [![GitHub issues](https://img.shields.io/github/issues/bruno-dd470/ChineseHistoricalPhonology)](https://github.com/bruno-dd470/ChineseHistoricalPhonology/issues)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20589359.svg)](https://doi.org/10.5281/zenodo.20589359)
 [![Code style: black](https://img.shields.io/badge/Code%20style-black-000000.svg)](https://github.com/psf/black)
 
 **A comprehensive system for historical and structural Chinese phonology analysis**
